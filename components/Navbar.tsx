@@ -27,7 +27,7 @@ export default function Navbar() {
             CONTACT{" "}
           </a>{" "}
           <a
-            href="https://github.com"
+            href="https://github.com/NuwanDhanu"
             target="_blank"
             className="border border-teal-400 text-teal-400 px-4 py-2 rounded hover:bg-teal-400/10 transition"
           >

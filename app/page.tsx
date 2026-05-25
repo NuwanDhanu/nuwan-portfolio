@@ -32,7 +32,7 @@ const projects = [
     title: "Cloud-Native Enterprise APIs",
     description:
       "Designed scalable RESTful microservices integrated with AWS services, Oracle, SQL Server, and CI/CD pipelines.",
-    tech: [".NET", "AWS", "Oracle", "Azure DevOps"],
+    tech: [".NET", "AWS", "Docker", "Kubernetes", "Oracle", "Azure DevOps"],
   },
 ];
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="hidden lg:flex fixed left-10 bottom-0 flex-col items-center gap-6 z-40">
           {" "}
           <a
-            href="https://github.com"
+            href="https://github.com/NuwanDhanu"
             target="_blank"
             className="hover:text-teal-400 transition"
           >
@@ -83,7 +83,7 @@ export default function Home() {
             <Github size={22} />{" "}
           </a>{" "}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nuwan-dhanushka/"
             target="_blank"
             className="hover:text-teal-400 transition"
           >
@@ -91,7 +91,7 @@ export default function Home() {
             <Linkedin size={22} />{" "}
           </a>{" "}
           <a
-            href="mailto:your@email.com"
+            href="mailto:nuwandhanushka93@gmail.com"
             className="hover:text-teal-400 transition"
           >
             {" "}
@@ -114,13 +114,15 @@ export default function Home() {
             </h1>{" "}
             <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mt-3 leading-tight max-w-4xl">
               {" "}
-              I build scalable cloud platforms and enterprise APIs.{" "}
+              I engineer scalable cloud-native platforms, enterprise APIs, and
+              modern distributed systems.{" "}
             </h2>{" "}
             <p className="max-w-2xl text-slate-400 mt-8 text-lg leading-8">
               {" "}
               Senior Software Engineer experienced in AWS, .NET, Node.js,
-              Hapi.js, REST APIs, Redis caching, microservices, CI/CD pipelines,
-              SQL Server, Oracle, and cloud-native architectures.{" "}
+              Hapi.js, Docker, Kubernetes, REST APIs, Redis caching,
+              microservices, CI/CD pipelines, SQL Server, Oracle, and
+              cloud-native enterprise architectures.{" "}
             </p>{" "}
             <div className="mt-10 flex gap-4 flex-wrap">
               {" "}
@@ -132,7 +134,7 @@ export default function Home() {
                 View My Work{" "}
               </a>{" "}
               <a
-                href="https://github.com"
+                href="https://github.com/NuwanDhanu"
                 target="_blank"
                 className="border border-slate-600 text-slate-300 px-7 py-4 rounded hover:border-teal-400 hover:text-teal-400 transition"
               >
@@ -167,9 +169,10 @@ export default function Home() {
               </p>{" "}
               <p>
                 {" "}
-                My experience includes AWS Lambda, API Gateway, Redis
-                optimization, Hapi.js services, .NET backend systems, CI/CD
-                pipelines, and enterprise-grade RESTful API design.{" "}
+                My experience includes AWS Lambda, API Gateway, Docker
+                containerization, Kubernetes orchestration, Redis optimization,
+                Hapi.js services, .NET backend systems, CI/CD pipelines, and
+                enterprise-grade RESTful API design.{" "}
               </p>{" "}
               <p>
                 {" "}
@@ -206,6 +209,7 @@ export default function Home() {
               </div>{" "}
               <div>.NET Core</div> <div>Hapi.js</div> <div>Redis Cache</div>{" "}
               <div>Microservices</div> <div>REST APIs</div> <div>Docker</div>{" "}
+              <div>Kubernetes</div> <div>Containerization</div>{" "}
               <div>Oracle</div> <div>Azure DevOps</div>{" "}
             </div>{" "}
           </div>{" "}
@@ -244,6 +248,14 @@ export default function Home() {
                 and Hapi.js.{" "}
               </li>{" "}
               <li> Managed systems handling 200K–300K daily requests. </li>{" "}
+              <li>
+                Implemented Docker-based containerization strategies for
+                enterprise services and deployment standardization.
+              </li>{" "}
+              <li>
+                Contributed to Kubernetes-oriented cloud-native deployment
+                workflows and scalable microservices infrastructure.
+              </li>{" "}
               <li>
                 {" "}
                 Implemented Redis caching and ACL authorization mechanisms.{" "}
@@ -334,7 +346,7 @@ export default function Home() {
             discussions.{" "}
           </p>{" "}
           <a
-            href="mailto:your@email.com"
+            href="mailto:nuwandhanushka93@gmail.com"
             className="inline-block border border-teal-400 text-teal-400 px-8 py-5 rounded hover:bg-teal-400/10 transition"
           >
             {" "}

@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { Network } from "lucide-react";
 
 import {
   Github,
@@ -14,6 +15,14 @@ import {
   Server,
   Database,
   BrainCircuit,
+  Boxes,
+  Container,
+  Cpu,
+  ShieldCheck,
+  Workflow,
+  Layers3,
+  TerminalSquare,
+  GitBranch,
 } from "lucide-react";
 const projects = [
   {
@@ -91,7 +100,7 @@ export default function Home() {
             <Linkedin size={22} />{" "}
           </a>{" "}
           <a
-            href="mailto:nuwandhanushka93@gmail.com"
+            href="mailto:nuwandhanushka2901@gmail.com"
             className="hover:text-teal-400 transition"
           >
             {" "}
@@ -207,10 +216,42 @@ export default function Home() {
                 <BrainCircuit className="text-teal-400" size={18} /> AI &
                 Automation{" "}
               </div>{" "}
-              <div>.NET Core</div> <div>Hapi.js</div> <div>Redis Cache</div>{" "}
-              <div>Microservices</div> <div>REST APIs</div> <div>Docker</div>{" "}
-              <div>Kubernetes</div> <div>Containerization</div>{" "}
-              <div>Oracle</div> <div>Azure DevOps</div>{" "}
+              <div className="flex items-center gap-3">
+                <Layers3 className="text-teal-400" size={18} />
+                .NET Core
+              </div>
+              <div className="flex items-center gap-3">
+                <Workflow className="text-teal-400" size={18} />
+                Hapi.js
+              </div>
+              <div className="flex items-center gap-3">
+                <Database className="text-teal-400" size={18} />
+                Redis Cache
+              </div>
+              <div className="flex items-center gap-3">
+                <Boxes className="text-teal-400" size={18} />
+                Microservices
+              </div>
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="text-teal-400" size={18} />
+                REST APIs
+              </div>
+              <div className="flex items-center gap-3">
+                <Container className="text-teal-400" size={18} />
+                Docker
+              </div>
+              <div className="flex items-center gap-3">
+                <Network className="text-teal-400" size={18} />
+                Kubernetes
+              </div>
+              <div className="flex items-center gap-3">
+                <Database className="text-teal-400" size={18} />
+                Oracle
+              </div>
+              <div className="flex items-center gap-3">
+                <GitBranch className="text-teal-400" size={18} />
+                Azure DevOps
+              </div>
             </div>{" "}
           </div>{" "}
         </section>{" "}
@@ -281,7 +322,7 @@ export default function Home() {
         <section
           id="projects"
           ref={projectsRef}
-          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40 min-h-screen"
+          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
         >
           {" "}
           <div className="flex items-center gap-4 mb-14">
@@ -327,13 +368,10 @@ export default function Home() {
         <section
           id="contact"
           ref={contactRef}
-          className="max-w-3xl mx-auto px-8 py-32 text-center lg:pl-40"
+          className="max-w-3xl mx-auto px-8 py-28 text-center lg:pl-40"
         >
           {" "}
-          <p className="text-teal-400 mb-5 tracking-widest text-sm">
-            {" "}
-            04. WHAT'S NEXT?{" "}
-          </p>{" "}
+          <p className="text-teal-400 text-xl"> 04. WHAT'S NEXT? </p>{" "}
           <h2 className="text-5xl font-bold text-slate-100 mb-8">
             {" "}
             Get In Touch{" "}
@@ -346,7 +384,7 @@ export default function Home() {
             discussions.{" "}
           </p>{" "}
           <a
-            href="mailto:nuwandhanushka93@gmail.com"
+            href="mailto:nuwandhanushka2901@gmail.com"
             className="inline-block border border-teal-400 text-teal-400 px-8 py-5 rounded hover:bg-teal-400/10 transition"
           >
             {" "}

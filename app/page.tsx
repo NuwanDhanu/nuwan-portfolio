@@ -43,6 +43,21 @@ const projects = [
       "Designed scalable RESTful microservices integrated with AWS services, Oracle, SQL Server, and CI/CD pipelines.",
     tech: [".NET", "AWS", "Docker", "Kubernetes", "Oracle", "Azure DevOps"],
   },
+  {
+    title: "Enterprise AI Knowledge Assistant",
+    description:
+      "Built an AI-powered knowledge platform integrating local and cloud LLMs with vector search to enable natural language access to technical documentation, API specifications, and operational runbooks.",
+    tech: [
+      "LM Studio",
+      "OpenAI",
+      "LangChain",
+      "Node.js",
+      "Python",
+      "Redis",
+      "AWS",
+      "Docker"
+    ],
+  }
 ];
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
@@ -51,6 +66,13 @@ export default function Home() {
     threshold: 0.3,
     onChange: (inView) => {
       if (inView) setActiveSection("about");
+    },
+  });
+
+  const { ref: aiRef } = useInView({
+    threshold: 0.3,
+    onChange: (inView) => {
+      if (inView) setActiveSection("ai");
     },
   });
 
@@ -123,14 +145,18 @@ export default function Home() {
             </h1>{" "}
             <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mt-3 leading-tight max-w-4xl">
               {" "}
-              I engineer scalable cloud-native platforms, enterprise APIs, and
-              modern distributed systems.{" "}
+              I engineer AI-powered applications, scalable cloud platforms,
+              enterprise APIs, and intelligent software systems.{" "}
             </h2>{" "}
             <p className="max-w-2xl text-slate-400 mt-8 text-lg leading-8">
               {" "}
-              Senior Software Engineer experienced in AWS, .NET, Node.js,
-              Hapi.js, Docker, Kubernetes, REST APIs, Redis caching,
-              microservices, CI/CD pipelines, SQL Server, Oracle, and
+              Senior Software Engineer with 9+ years of experience building
+              scalable cloud applications using .NET, Python, Node.js, AWS, and
+              Kubernetes. Passionate about AI Engineering, Generative AI, LLM
+              integration, AI-assisted development, and intelligent automation
+              using ChatGPT, GitHub Copilot, and open-source language models.
+              AWS, .NET, Node.js, Hapi.js, Docker, Kubernetes, REST APIs, Redis
+              caching, microservices, CI/CD pipelines, SQL Server, Oracle, and
               cloud-native enterprise architectures.{" "}
             </p>{" "}
             <div className="mt-10 flex gap-4 flex-wrap">
@@ -255,15 +281,46 @@ export default function Home() {
             </div>{" "}
           </div>{" "}
         </section>{" "}
+        {/* AI */}{" "}
+        <section
+          id="ai"
+          ref={aiRef}
+          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
+        >
+          <div className="flex items-center gap-4 mb-10">
+            {" "}
+            <span className="text-teal-400 text-xl">02.</span>{" "}
+            <h2 className="text-3xl font-bold text-slate-100">
+              AI Engineering
+            </h2>{" "}
+            <div className="h-[1px] bg-slate-700 flex-1"></div>{" "}
+          </div>{" "}
+          <div className="bg-[#112240] rounded-2xl p-8 border border-slate-800 hover:-translate-y-1 transition duration-300">
+            {" "}
+            <p className="text-slate-400 pl-5">
+              {" "}
+              Alongside my cloud and full-stack engineering experience, I
+              actively build AI-powered applications and intelligent developer
+              tools using Generative AI and Large Language Models (LLMs). I
+              leverage ChatGPT, GitHub Copilot, and open-source LLMs to
+              accelerate software development, testing, debugging,
+              documentation, and automation. My interests include prompt
+              engineering, AI model evaluation, local LLM deployment, and
+              integrating AI capabilities into scalable cloud-native
+              applications to improve developer productivity and deliver
+              intelligent software solutions.{" "}
+            </p>{" "}
+          </div>{" "}
+        </section>{" "}
         {/* EXPERIENCE */}{" "}
         <section
           id="experience"
           ref={experienceRef}
           className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
         >
-          <div className="flex items-center gap-4 mb-14">
+          <div className="flex items-center gap-4 mb-10">
             {" "}
-            <span className="text-teal-400 text-xl">02.</span>{" "}
+            <span className="text-teal-400 text-xl">03.</span>{" "}
             <h2 className="text-3xl font-bold text-slate-100">Experience</h2>{" "}
             <div className="h-[1px] bg-slate-700 flex-1"></div>{" "}
           </div>{" "}
@@ -315,6 +372,26 @@ export default function Home() {
                 Built CI/CD pipelines and deployment workflows using Azure
                 DevOps.{" "}
               </li>{" "}
+              <li>
+                {" "}
+                Integrated AI-assisted development tools including GitHub
+                Copilot and ChatGPT into daily software engineering workflows.{" "}
+              </li>{" "}
+              <li>
+                {" "}
+                Built and evaluated AI prototypes using Python and local Large
+                Language Models (LLMs).{" "}
+              </li>{" "}
+              <li>
+                {" "}
+                Researched AI-powered automation for documentation generation,
+                log analysis, and developer productivity.{" "}
+              </li>{" "}
+              <li>
+                {" "}
+                Experimented with prompt engineering and AI model evaluation for
+                enterprise software development.{" "}
+              </li>{" "}
             </ul>{" "}
           </div>{" "}
         </section>{" "}
@@ -327,7 +404,7 @@ export default function Home() {
           {" "}
           <div className="flex items-center gap-4 mb-14">
             {" "}
-            <span className="text-teal-400 text-xl">03.</span>{" "}
+            <span className="text-teal-400 text-xl">04.</span>{" "}
             <h2 className="text-3xl font-bold text-slate-100">
               Featured Projects
             </h2>{" "}
@@ -371,7 +448,7 @@ export default function Home() {
           className="max-w-3xl mx-auto px-8 py-28 text-center lg:pl-40"
         >
           {" "}
-          <p className="text-teal-400 text-xl"> 04. WHAT'S NEXT? </p>{" "}
+          <p className="text-teal-400 text-xl"> 05. WHAT'S NEXT? </p>{" "}
           <h2 className="text-5xl font-bold text-slate-100 mb-8">
             {" "}
             Get In Touch{" "}

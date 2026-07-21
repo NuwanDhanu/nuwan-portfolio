@@ -6,6 +6,7 @@ type Props = {
 
 const links = [
   { id: "about", label: "About" },
+  { id: "ai", label: "AI" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },

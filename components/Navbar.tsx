@@ -17,6 +17,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10 text-sm text-slate-300">
           <a href="#about" className="hover:text-teal-400">ABOUT</a>
+          <a href="#ai" className="hover:text-teal-400">AI</a>
           <a href="#experience" className="hover:text-teal-400">EXPERIENCE</a>
           <a href="#projects" className="hover:text-teal-400">PROJECTS</a>
           <a href="#contact" className="hover:text-teal-400">CONTACT</a>
@@ -36,6 +37,7 @@ export default function Navbar() {
         <div className="md:hidden bg-[#112240] border-t border-slate-800">
           <div className="flex flex-col p-6 gap-6 text-slate-300">
             <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
+            <a href="#ai" onClick={() => setOpen(false)}>AI</a>
             <a href="#experience" onClick={() => setOpen(false)}>EXPERIENCE</a>
             <a href="#projects" onClick={() => setOpen(false)}>PROJECTS</a>
             <a href="#contact" onClick={() => setOpen(false)}>CONTACT</a>

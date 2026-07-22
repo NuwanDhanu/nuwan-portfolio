@@ -55,9 +55,9 @@ const projects = [
       "Python",
       "Redis",
       "AWS",
-      "Docker"
+      "Docker",
     ],
-  }
+  },
 ];
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
@@ -183,7 +183,7 @@ export default function Home() {
         <section
           ref={aboutRef}
           id="about"
-          className="max-w-6xl mx-auto px-8 py-28 grid md:grid-cols-2 gap-16 items-center lg:pl-40"
+          className="max-w-6xl mx-auto px-8 pt-28 pb-14 grid md:grid-cols-2 gap-16 items-center lg:pl-40"
         >
           {" "}
           <div>
@@ -285,7 +285,7 @@ export default function Home() {
         <section
           id="ai"
           ref={aiRef}
-          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
+          className="max-w-6xl mx-auto px-8 pt-14 pb-14 lg:pl-40"
         >
           <div className="flex items-center gap-4 mb-10">
             {" "}
@@ -316,7 +316,7 @@ export default function Home() {
         <section
           id="experience"
           ref={experienceRef}
-          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
+          className="max-w-6xl mx-auto px-8 pt-14 pb-14 lg:pl-40"
         >
           <div className="flex items-center gap-4 mb-10">
             {" "}
@@ -375,7 +375,8 @@ export default function Home() {
               <li>
                 {" "}
                 Integrated AI-assisted development tools including GitHub
-                Copilot and ChatGPT into daily software engineering workflows.{" "}
+                Copilot and ChatGPT into daily software engineering
+                workflows.{" "}
               </li>{" "}
               <li>
                 {" "}
@@ -399,7 +400,7 @@ export default function Home() {
         <section
           id="projects"
           ref={projectsRef}
-          className="max-w-6xl mx-auto px-8 py-28 lg:pl-40"
+          className="max-w-6xl mx-auto px-8 pt-14 pb-14 lg:pl-40"
         >
           {" "}
           <div className="flex items-center gap-4 mb-14">
@@ -415,7 +416,16 @@ export default function Home() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-[#112240] rounded-2xl p-8 border border-slate-800 hover:-translate-y-2 hover:border-teal-400/30 transition duration-300"
+                className={`
+                bg-[#112240] rounded-2xl p-8 border border-slate-800
+                hover:-translate-y-2 hover:border-teal-400/30 transition duration-300
+            
+                ${
+                  projects.length % 3 === 1 && index === projects.length - 1
+                    ? "xl:col-start-2"
+                    : ""
+                }
+              `}
               >
                 {" "}
                 <div className="flex justify-between items-start mb-6">
@@ -445,7 +455,7 @@ export default function Home() {
         <section
           id="contact"
           ref={contactRef}
-          className="max-w-3xl mx-auto px-8 py-28 text-center lg:pl-40"
+          className="max-w-3xl mx-auto px-8 pt-14 pb-14 text-center lg:pl-40"
         >
           {" "}
           <p className="text-teal-400 text-xl"> 05. WHAT'S NEXT? </p>{" "}

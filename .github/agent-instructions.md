@@ -252,14 +252,6 @@ Emphasize:
 - API Design
 - Microservices
 
-Do NOT mention:
-
-- Looking for work
-- Open to opportunities
-- Open to Germany
-- Relocation
-- Visa status
-
 The portfolio should remain suitable for sharing with current colleagues, clients, and recruiters.
 
 ---
